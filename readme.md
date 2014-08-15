@@ -7,7 +7,7 @@ Phishing Framework.
 How to use
 ----------
 
-Do not use it!
+> DO NOT USE IT!
 
 Exceptions:
 * Educational purposes
