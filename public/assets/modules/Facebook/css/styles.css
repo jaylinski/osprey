@@ -1,0 +1,11 @@
+body.browserbar {
+	padding-top:36px;
+}
+.browserinput {
+	display:inline-block;
+	margin: 6px 0 0 124px;
+	font-size:12pt;
+	border:none;
+	outline: none;
+	width: 100%;
+}

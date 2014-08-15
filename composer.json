@@ -1,0 +1,28 @@
+{
+	"name": "jaylinski/osprey",
+	"description": "Osprey, eagle eye phishing.",
+	"keywords": ["osprey", "phishing"],
+	"license": "MIT",
+	"support": {
+		"source": "http://github.com/jaylinski/osprey",
+		"wiki": "http://github.com/jaylinski/osprey/wiki",
+		"issues": "http://github.com/jaylinski/osprey/issues"
+	},
+	"authors": [
+		{
+			"name": "Jakob Linskeseder",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": ">=5.3.0",
+		"monolog/monolog": "1.10.*"
+	},
+	"autoload": {
+        "psr-4": {
+        	"Osprey\\": "src/Osprey",
+        	"Monolog\\": "src/Monolog"
+        }
+    },
+	"minimum-stability": "dev"
+}

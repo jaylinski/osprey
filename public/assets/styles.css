@@ -1,0 +1,30 @@
+body, html  {
+	margin: 0;
+}
+body {
+	padding: 40px 0;
+	background-color: #f4f4f4;
+	font-family: sans-serif;
+}
+
+h1 {
+	background-color: #555;
+	color: #f5f5f5;
+	text-shadow: 1px 1px #000;
+	padding: 10px 60px;
+}
+
+.content {
+	padding: 60px;
+}
+.content img {
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.8);
+}
+
+.pull-right {
+	float: right;
+}
+.pull-left {
+	float: left;
+}
