@@ -19,7 +19,7 @@ $osprey = new Osprey\Osprey;
 
 /*
 |--------------------------------------------------------------------------
-| If Module is selected, get Module and ouput data.
+| If Module is selected, get Module and ouput data
 |--------------------------------------------------------------------------
 */
 
@@ -60,8 +60,4 @@ else
 	</div>
 </body>
 </html>
-<?php
-
-}
-
-?>
+<?php } ?>

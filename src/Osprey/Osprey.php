@@ -2,6 +2,8 @@
 
 namespace Osprey;
 
+use Modules\ModuleException;
+
 class Osprey
 {
 	public function __construct()
@@ -13,12 +15,20 @@ class Osprey
 	 * Gets Module
 	 * 
 	 * @param string $moduleName
-	 * @return \Module\Module 
+	 * @return \Modules\Module
 	 */
 	public function getModule($moduleName)
 	{
-		$moduleName = '\Osprey\Modules\\'.$moduleName;
-		return new $moduleName();
+		$moduleName = 'Osprey\Modules\\'.$moduleName;
+		
+		if(class_exists($moduleName))
+		{
+			return new $moduleName();
+		}
+		else
+		{
+			throw new \Exception("Module not available.");
+		}		
 	}
 	
 	/**
